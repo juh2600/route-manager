@@ -1,0 +1,12 @@
+{
+  "name": "route-manager",
+  "version": "1.0.0",
+  "description": "add support for alternative notation to configure Express routes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kate Reed",
+  "license": "UNLICENSED",
+  "dependencies": {}
+}
