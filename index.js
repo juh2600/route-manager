@@ -3,7 +3,7 @@ exports.apply = function(app, component, logger = console.log) {
 		if(route.method.constructor.name == 'String') route.method = [route.method];
 		route.method.forEach((method) => {
 			if(route.handler.constructor.name == 'Function') route.handler = [route.handler];
-			if(route.method.toLocaleUpperCase() == 'USE') {
+			if(method.toLocaleUpperCase() == 'USE') {
 				route.handler.forEach((func) => {
 					logger(`Adding middleware: ${func.name}`);
 					app.use(func);
